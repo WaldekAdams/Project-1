@@ -8,13 +8,19 @@
 </head>
 
 <body>
-    <h1>Nowy plik</h1>
-    <div class="divOne">
-        <p>pierwszy paragraf</p>
-    </div>
-    <div>
-        <p>drugi paffragraf</p>
-    </div>
+    <div style="background-color: red;" class="red" data-color="red"></div>
+    <div style="background-color: green;" class="green"></div>
 </body>
+<script>
+    const divRed = document.querySelector('.red')
+
+    colors = ['red', 'green'];
+
+    function comparisonColors() {
+        if (colors[0] === divRed.dataset.color) {
+            console.log('ok')
+        }
+    }
+</script>
 
 </html>
