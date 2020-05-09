@@ -11,7 +11,6 @@ class Colors {
             let index = Math.floor(Math.random() * this.colorChoice.length);
             let color = this.colorChoice[index];
             colorsArr.push(color);
-            console.log('okej')
         }
         return colorsArr
 

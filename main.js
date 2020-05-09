@@ -1,26 +1,25 @@
 const btn = document.querySelector('button.start');
 const showColors = document.querySelector('div.showColors');
-colors = [...document.querySelectorAll('.colors div')];
+divColors = [...document.querySelectorAll('.colors div')];
 divFirst = document.querySelector('div.first');
 
+let drawColors = []
+let index = 0;
 
-function comparisonColors() {
-    if (colors[0] === this.dataset.color) {
-        console.log('ok')
-    }
+startGame = function () {
+    start = new Colors();
+    drawColors = start.getColors();
+    console.log(drawColors)
+
 }
 
-colors.forEach(function (div) {
-    colArray = ["red", 'green']
+divColors.forEach(function (div) {
     div.addEventListener('click', function () {
-        if (colArray[0] === this.dataset.color) {
-            console.log('dziala')
-        }
+
+        if (drawColors[index] === this.dataset.color) {
+            console.log('dobrze!');
+            index++;
+        } else alert('Przegrales')
     })
 })
-btn.addEventListener('click', function () {
-    start = new Colors();
-    let test = start.getColors();
-    console.log(test)
-
-})
+btn.addEventListener('click', startGame)

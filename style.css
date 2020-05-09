@@ -16,6 +16,12 @@ div.second {
     background-color: rgb(40, 150, 10);
 }
 
+div.three {
+    width: 15vh;
+    height: 15vh;
+    background-color: rgb(36, 10, 150);
+}
+
 div.showColors {
     display: inline-block;
     width: 50vw;
