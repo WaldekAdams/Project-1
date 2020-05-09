@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-div.red {
+div.first {
     width: 15vh;
     height: 15vh;
     background-color: rgb(163, 4, 4);
 }
 
-div.green {
+div.second {
     width: 15vh;
     height: 15vh;
     background-color: rgb(40, 150, 10);
