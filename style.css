@@ -4,22 +4,54 @@
     box-sizing: border-box;
 }
 
-div.first {
-    width: 15vh;
-    height: 15vh;
-    background-color: rgb(163, 4, 4);
+div.colors {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(184, 176, 176);
+    height: 40vh;
+
 }
 
-div.second {
-    width: 15vh;
-    height: 15vh;
-    background-color: rgb(40, 150, 10);
+div.colors div {
+    box-shadow: 0 0 8px white;
 }
 
-div.three {
+div.red {
     width: 15vh;
     height: 15vh;
-    background-color: rgb(36, 10, 150);
+    background-color: red
+}
+
+div.green {
+    width: 15vh;
+    height: 15vh;
+    background-color: green;
+}
+
+div.blue {
+    width: 15vh;
+    height: 15vh;
+    background-color: blue;
+}
+
+div.yellow {
+    width: 15vh;
+    height: 15vh;
+    background-color: yellow;
+}
+
+div.purple {
+    width: 15vh;
+    height: 15vh;
+    background-color: purple;
+}
+
+div.black {
+    width: 15vh;
+    height: 15vh;
+    background-color: black;
 }
 
 div.showColors {
