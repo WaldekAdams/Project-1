@@ -4,18 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(/img/colour-1885352_1920.jpg);
+    background-size: cover;
+}
+
 div.colors {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(184, 176, 176);
+    /* background-color: rgb(184, 176, 176); */
     height: 30vh;
+    opacity: 0.9;
 
 }
 
 div.colors div {
     box-shadow: 0 0 8px white;
+    opacity: 1;
 }
 
 div.red {
@@ -55,11 +62,15 @@ div.black {
 }
 
 div.showColors {
-    height: 20vh;
-    max-width: 70vw;
+    background-image: url(/img/color-300343_1920.jpg);
+    background-size: cover;
+    color: gainsboro;
+    /* background-color: gray; */
+    height: 15vh;
+    max-width: 60vw;
     padding: 0 20px;
     margin: 5vh auto;
-    line-height: 20vh;
+    line-height: 15vh;
     font-size: 34px;
     text-align: center;
     text-transform: uppercase;
@@ -67,12 +78,13 @@ div.showColors {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     opacity: 0;
     transition: 0.8s;
-    border: 2px dashed dodgerblue;
+    border: 2px solid dodgerblue;
 }
 
 div.active {
     opacity: 1;
     letter-spacing: 3px;
+    transform: scale(1.2);
 }
 
 button.start {

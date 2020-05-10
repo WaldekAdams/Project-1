@@ -19,6 +19,7 @@ startGame = function () {
 
     start = new Colors();
     drawColors = start.getColors();
+    showColors.textContent = drawColors
     console.log(drawColors);
     setTimeout(addBoard, 500)
     setTimeout(removeBoard, 3500)
@@ -28,8 +29,13 @@ startGame = function () {
         div.addEventListener('click', function () {
             if (drawColors[index] === this.dataset.color) {
                 console.log('dobrze!');
+                showColors.textContent = 'Dobrze!';
+                setTimeout(addBoard, 100)
+                setTimeout(removeBoard, 500)
                 index++;
-            } else return drawColors = [], index = 0, alert('przegrales')
+
+            }
+            if (index === drawColors.length) return
         })
     })
 
