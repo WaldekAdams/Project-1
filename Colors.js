@@ -1,8 +1,8 @@
 class Colors {
     constructor() {
-        this.colorChoice = ['red', 'green', 'blue'];
+        this.colorChoice = ['red', 'green', 'blue', 'black', 'purple', 'yellow'];
         let _result = this.takeRandomColors();
-        this.getColors = () => _result
+        this.getColors = () => _result;
 
     }
     takeRandomColors() {

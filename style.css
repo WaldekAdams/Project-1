@@ -5,12 +5,12 @@
 }
 
 div.colors {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(184, 176, 176);
-    height: 40vh;
+    height: 30vh;
 
 }
 
@@ -55,6 +55,33 @@ div.black {
 }
 
 div.showColors {
-    display: inline-block;
-    width: 50vw;
+    height: 20vh;
+    max-width: 70vw;
+    padding: 0 20px;
+    margin: 5vh auto;
+    line-height: 20vh;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0;
+    transition: 0.8s;
+    border: 2px dashed dodgerblue;
+}
+
+div.active {
+    opacity: 1;
+    letter-spacing: 3px;
+}
+
+button.start {
+    display: block;
+    width: 12vw;
+    height: 10vh;
+    margin: 30px auto;
+    font-size: 28px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
