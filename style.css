@@ -97,3 +97,24 @@ button.start {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+div.result {
+    width: 80%;
+    height: 12vh;
+    line-height: 12vh;
+    margin: 0 auto;
+    font-size: 70px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(17, 212, 11);
+    background-color: rgb(24, 55, 142);
+    border: 2px solid black;
+    letter-spacing: 6px;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+div.result.run {
+
+    transform: scale(1);
+}
