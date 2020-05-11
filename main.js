@@ -18,7 +18,8 @@ let removeBoard = function () {
 
 startGame = function () {
     // let flag = true;
-
+    divResult.classList.remove('run');
+    index = 0;
 
     start = new Colors();
     drawColors = start.getColors();
@@ -41,7 +42,8 @@ if (flag) {
                 setTimeout(removeBoard, 400)
                 index++;
                 if (index === drawColors.length) {
-                    divResult.textContent = 'Wygrana!!'
+                    divResult.textContent = 'Wygrana!!';
+                    divResult.style.color = 'rgb(17, 212, 11)'
                     divResult.classList.add('run')
                     drawColors = [];
                 }
