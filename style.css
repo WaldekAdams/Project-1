@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/img/colour-1885352_1920.jpg);
+    background-image: url(img/colour-1885352_1920.jpg);
     background-size: cover;
 }
 
@@ -14,7 +14,6 @@ div.colors {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: rgb(184, 176, 176); */
     height: 30vh;
     opacity: 0.9;
 
@@ -62,10 +61,10 @@ div.black {
 }
 
 div.showColors {
-    background-image: url(/img/color-300343_1920.jpg);
+    background-image: url(img/color-300343_1920.jpg);
     background-size: cover;
+    background-position-y: bottom;
     color: gainsboro;
-    /* background-color: gray; */
     height: 15vh;
     max-width: 60vw;
     padding: 0 20px;
